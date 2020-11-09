@@ -1,0 +1,33 @@
+
+<ion-app>  
+     <ion-menu side="end" menuId="first" contentId="content">  
+       <ion-header>  
+         <ion-toolbar color="blue">  
+           <ion-title>Menu</ion-title>  
+         </ion-toolbar>   
+       </ion-header>  
+       <ion-content color="light">  
+         <!-- <ion-list >  
+           <ion-menu-toggle auto-hide="true">  
+             <ion-item [routerLink]="pages.url" routerDirection="forward">  
+               <ion-icon [name]="pages.icon" slot="start"></ion-icon>  
+                 {{pages.title}}   
+             </ion-item>  
+           </ion-menu-toggle>  
+         </ion-list>   -->
+         <ion-item>
+          <ion-icon name="trash" slot="start"></ion-icon>
+          <ion-label>Trash</ion-label>
+        </ion-item>
+         <!-- <ion-list>
+          <ion-item>Menu Item</ion-item>
+          <ion-item>Menu Item</ion-item>
+          <ion-item>Menu Item</ion-item>
+          <ion-item>Menu Item</ion-item>
+          <ion-item>Menu Item</ion-item>
+        </ion-list> -->
+       </ion-content>   
+     </ion-menu>  
+     <ion-router-outlet Id="content"></ion-router-outlet>  
+   </ion-app>   
+ 
